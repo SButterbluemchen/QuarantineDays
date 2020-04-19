@@ -1,29 +1,10 @@
 function displayDate() {
     const d = new Date();
-    let currentDay = new Array(7);
-        currentDay[0] = "Sunday";
-        currentDay[1] = "Monday";
-        currentDay[2] = "Tuesday";
-        currentDay[3] = "Wednesday";
-        currentDay[4] = "Thursday";
-        currentDay[5] = "Friday";
-        currentDay[6] = "Saturday";
-        let currentDayName = currentDay[d.getDay()];
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let currentDayName = days[d.getDay()];
 
-    let currentMonth = new Array(12);
-        currentMonth[1] = "January";
-        currentMonth[2] = "February";
-        currentMonth[3] = "March";
-        currentMonth[4] = "April";
-        currentMonth[5] = "May";
-        currentMonth[6] = "June";
-        currentMonth[7] = "July";
-        currentMonth[8] = "August";
-        currentMonth[9] = "September";
-        currentMonth[10] = "October";
-        currentMonth[11] = "November";
-        currentMonth[12] = "December";
-        let currentMonthName = currentMonth[d.getMonth()];
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        let currentMonthName = months[d.getMonth()];
 
     const currentDate = d.getDate();
     const currentYear = d.getFullYear();
@@ -43,8 +24,29 @@ function displayQuarantineDay() {
     document.getElementById("quarantineDay").innerHTML = quarantineDay;
 }
 
-
 function render() {
     displayDate();
     displayQuarantineDay();
 }
+
+function displayActivity() {
+    let activity = [
+        "Do some sports 🚴‍♀️",
+        "Bake some cookies 🍪",
+        "Have a beer 🍺",
+        "Read a book 📚",
+        "Call your best friend 📱",
+        "Buy a puzzle 🧩",
+        "Clean your windows 🧼",
+        "Take a shower 🛀",
+        "Take a hot bath 🛁"
+    ];
+    const selectedActivity = activity[Math.floor(Math.random()*activity.length)];
+
+
+    let activityElement = document.createElement('p');
+    activityElement.textContent = selectedActivity;
+    activityElement.setAttribute('id', 'activity');
+    document.getElementById("activity-selector").appendChild(activityElement);
+    document.getElementById("activity-button").remove();
+} 

@@ -10,16 +10,21 @@
 
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script type="text/javascript" src="javascript.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@900&family=Roboto:wght@900&display=swap" rel="stylesheet">
 </head>
 
-<body onload="render();">
+<body onload="render()">
     
   <h1>Which day of quarantine is today?</h1>
   <div>
-    <p>Today is Day:</p>
+    <p>Today:</p>
     <p id="currentDate"></p>
   </div>
-  <p>This makes it the following quarantine day:</p>
-  <p id="quarantineDay"></p>
-</bodyonload="script();">
+  <div>
+    <p id="quarantinePhrase">Quarantine day:</p>
+    <p id="quarantineDay"></p>
+  </div>
+  <div id="activity-selector">
+      <button id="activity-button" onclick="displayActivity()">What should I do today?</button>
+  </div>
 </html>
