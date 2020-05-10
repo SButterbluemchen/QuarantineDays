@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+
+  <title>Beste Mama Zähler</title>
+  <meta name="description" content="Beste Mama Zähler 2020">
+  <meta name="author" content="SinaBrauch">
+
+  <link rel="stylesheet" type="text/css" href="Muttertagstyles.css">
+  <script type="text/javascript" src="Muttertag.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+
+<body onload="render()">
+    
+  <h1>Die beste Mama seit ...</h1>
+  <div id="timeTable">
+          <div class="row">
+            <div class="column" id="motherYear"></div>
+            <div class="column" id="motherMonth"></div>
+            <div class="column" id="motherDay"></div>
+          </div>
+          <div class="row">
+            <div class="column">Jahren</div>
+            <div class="column">Monaten</div>
+            <div class="column">Tagen</div>
+          </div>
+    </div>
+    <div id="timeTable">
+          <div class="row">
+            <div class="column" id="motherHour"></div>
+            <div class="column" id="motherMinute"></div>
+            <div class="column" id="motherSecond"></div>
+          </div>
+          <div>
+            <div class="column">Stunden</div>
+            <div class="column">Minuten</div>
+            <div class="column">Sekunden</div>
+          </div>
+  </div>
+  <div>
+    <p id="today">Heute</p>
+    <p id="currentDate"></p>
+  </div>
+  <div id="activity-selector">
+      <button id="activity-button" onclick="displayActivity()">Deine Nachricht des Tages</button>
+  </div>
+</html>
