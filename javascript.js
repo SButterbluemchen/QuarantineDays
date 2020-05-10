@@ -1,3 +1,4 @@
+
 function displayDate() {
     const d = new Date();
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
