@@ -60,10 +60,26 @@ function displayActivity() {
         "Trinke auf die beste Mama 🥂",
         "In ein paar Wochen sind wir da 😍",
         "Bald geht's wieder zum Wellness 🧼",
-        "Hast du die Mona Lisa gemalt!? 🤨",
+        "Hast du die Mona Lisa schon gemalt!? 🤨",
         "Ist das Puzzle fertig? 🧩",
         "Hallo, wie war dein Tag?",
-        "Kuss 😘"
+        "Kuss 😘",
+        "Danke, dass du meine Mama bist",
+        "Ich freue mich schon aufs nächste Mal",
+        "Ganz Liebe Grüße",
+        "Immer positiv denken. Andere wohnen noch weiter weg 😉",
+        "Gäbe es kein Frankreich, gäbe es auch keinen Käse und Wein 😅",
+        "Einen schönen Tag, Lieblingsmama! ❤️",
+        "Gib Papa einen Kuss von mir",
+        "Sag Papa, er soll dir einen Kuss von mir geben",
+        "Ganz viele Küsse",
+        "Bonjour, Je t'aime 😍",
+        "Marmor, Stein und Eisen bricht, aber unsere Liebe nicht 🎵",
+        "Hab dich Lieb ❤️",
+        "Bisou 😚",
+        "Hugs & kisses",
+        "Bereite doch schon mal unser Bett für das nächste Mal vor",
+        "Heute einmal ein wenig entspannen... 🛀"
     ];
     const selectedActivity = activity[Math.floor(Math.random()*activity.length)];
 
